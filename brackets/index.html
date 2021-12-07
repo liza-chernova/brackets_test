@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .body {
+            box-sizing: border-box;
+        }
+
+        #form-box {
+            padding: 200px 200px;
+            font-family: sans-serif;
+        }
+
+        input[type=text] {
+            width:100%;
+            padding: 10px;
+            margin:10px 0;
+            border: 0;
+            border-bottom: 1px solid #eee;
+            box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+            border-radius:10px;
+        }
+
+        button {
+            display: inline-block;	
+            position: relative;
+            padding: 0 25px;
+            margin:0 auto;
+            outline: none;
+            border: 1px solid #fff;
+            border-radius: 50px;
+            height: 46px;
+            line-height: 46px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #444;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+            cursor: pointer;
+            user-select: none;
+            appearance: none;
+            touch-action: manipulation;  
+            vertical-align: top;
+            transition: box-shadow 0.2s;
+        }
+        label {
+             position: relative; 
+             padding-left: 30px; 
+             cursor: pointer;
+            }
+    </style>
+</head>
+<body>
+    <section class="form">
+        <form id="form-box" method="post" action="server.php">
+            <label for="person-string">Введите пример:</label>
+            <input id="person-string" type="text" name="string" placeholder="((}}">
+            <input type="submit">Отправить</input>
+        </form>
+    </section>
+<script src="./xhr.js"></script>
+</body>
+</html>
